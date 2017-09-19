@@ -70,6 +70,10 @@ body {
 	color: #28323C;
 }
 
+.article img {
+    max-width:100%;
+}
+
 /* for tags, categories, archive */
 .tags-categories-archive {
     font-size: 17px;

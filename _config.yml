@@ -12,23 +12,6 @@ url: https://github.com/zxixia/jekyll-xixia
 #     run it like so: jekyll serve --baseurl=''
 baseurl: '/jekyll-xixia'
 
-# This can be '' to hide the Github nav button
-github: 'scotte/jekyll-clean'
-
-# Set this to your UA-# value, or '' to disable the block completely
-gaaccount: ''
-
-# The 'comments' setting enables comments. You'll need to select either
-# disqus or isso below to choose a comment system. Individual posts can
-# override 'comments' to disable on a post-by-post basis.
-comments: true
-
-# Set this to your public isso URL to enable comments via isso. Set to '' to disable isso.
-isso: ''
-
-# Set this to your disqus shortname to enable comments via disqus. Set to '' to disable disqus.
-disqus: ''
-
 paginate: 10
 
 highlighter: rouge
