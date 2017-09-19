@@ -1,0 +1,14 @@
+<h1>友情链接</h1>
+<ul>
+  <!-- <li><a href="#">One</a></li>
+  <li><a href="#">Two</a></li>
+  <li><a href="#">Three</a></li>
+  <li><a href="#">Four</a></li> -->
+  {% for link in site.data.links %}
+  <li>
+    <a href="{{ link.url }}">
+      {{ link.title }}
+    </a>
+  </li> 
+  {% endfor %}
+</ul>

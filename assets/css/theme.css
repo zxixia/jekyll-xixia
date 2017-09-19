@@ -1,0 +1,121 @@
+body {
+    background-image: url(/assets/images/canvas_bg.jpg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.copyright {
+    color: #ffffff;
+    padding-top:10px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer a {
+    color: #aaa;
+}
+
+.sidebar {
+    color: #fff;
+    background-color: #28323C;
+    font-size: 1.1em;
+}
+
+.sidebar h1 {
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.sidebar a {
+    color: #aaa;
+}
+
+.sidebar li {
+    margin-top: .7em;
+    line-height: 1em;
+}
+
+.sidebar a:hover {
+    color: #e74c3c;
+}
+
+/* Xixia logo */
+.sidebar-header {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.container-left {
+    margin: 0;
+}
+
+.author {
+    color: #ee4444;
+}
+
+.author a {
+    color: #ee4444;
+}
+
+
+/* post style */
+.article {
+    font-size: 17px;
+	color: #28323C;
+}
+
+/* for tags, categories, archive */
+.tags-categories-archive {
+    font-size: 17px;
+	color: #28323C;
+}
+
+.icon-style {
+    font-size: 13px;
+}
+
+.post-date {
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 3px;
+}
+
+/* 
+    custom bootstrap navbar
+    reference from: https://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3 
+*/
+.navbar-custom {
+    background-color:#28323C;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #ffffff;
+    background-color:transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #e74c3c;
+}
+
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+    background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+    background-color:#28323C;
+}

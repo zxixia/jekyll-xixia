@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12 footer navbar-custom navbar-fixed-bottom">
+            <p class="copyright">&copy;{{ site.time | date: '%Y' }} {{ site.name }}，自豪的采用
+                    {% for thank in site.data.thanks %}
+                      <a href="{{ thank.url }}">
+                        {{ thank.title }}
+                          <!-- 非最后一条连接，输出一个， -->
+                          {% if forloop.last == false %}
+                          ,
+                          {% endif %}
+                      </a>
+                    {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- 
+    {% include disqus-counts.html %}
+    {% include analytics.html %} 
+-->
+
+</body>
+</html>
