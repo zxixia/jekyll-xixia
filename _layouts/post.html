@@ -4,7 +4,17 @@ layout: default
 <div class="article">
     <div class="well">
         <h2><a href="{{ site.baseurl}}{{ page.url }}">{{ page.title }}</a></h2>
-        <span class="post-date">{{ page.date | date: "%Y年-%m月-%d日" }}</span>
+        <span class="post-date">
+                {% assign d = page.date | date: "%d" | plus:'0' %}
+                {{ page.date | date: "%B" }}
+                {% case d %}
+                {% when 1 or 21 or 31 %}{{ d }}st,
+                {% when 2 or 22 %}{{ d }}nd,
+                {% when 3 or 23 %}{{ d }}rd,
+                {% else %}{{ d }}th,
+                {% endcase %}
+                {{ page.date | date: "%Y" }}
+        </span>
         <hr style="border-top:1px solid #28323C;"/>
     {% if site.comments and page.comments %}
         {% if site.disqus != '' %}

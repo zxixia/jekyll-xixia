@@ -1,5 +1,5 @@
 body {
-    background-image: url(/assets/images/canvas_bg.jpg);
+    background-image: url(/jekyll-xixia/assets/images/canvas_bg.jpg);
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -15,6 +15,10 @@ body {
 
 .footer a {
     color: #aaa;
+}
+
+.footer a:hover {
+    color: #e74c3c;
 }
 
 .sidebar {

@@ -1,7 +1,7 @@
 <div class="sidebar well">
     <header class="sidebar-header" role="banner">
         <a href="{{ site.baseurl }}/">
-            <img src="/assets/images/xixia.gif" class="img-circle" />
+            <img src="{{ site.baseurl }}/assets/images/xixia.gif" class="img-circle" />
         </a>
         <!--
         <h3 class="title">
@@ -15,7 +15,7 @@
 </div>
 
 <div class="sidebar well">
-    <h1>最新文章</h1>
+    <h1>Recent posts</h1>
     <ul>
         {% for post in site.posts limit:5 %}
           <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>

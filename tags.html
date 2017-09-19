@@ -10,7 +10,7 @@ layout: default
         {% for node in pages_list %}
             {% if node.title != null %}
             {% if group == null or group == node.group %}
-                <li><a href="{{ site.baseurl}}{{ node.url }}">{{ node.date | date: "%y年%m月" }} - {{ node.title }}</a></li>
+                <li><a href="{{ site.baseurl}}{{ node.url }}">{{ node.date | date: "%y-%m" }} - {{ node.title }}</a></li>
             {% endif %}
             {% endif %}
         {% endfor %}
