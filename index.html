@@ -7,7 +7,7 @@ layout: default
     <div class="well">
 
         <span class="post-date">
-            
+            <!--
             {% assign d = post.date | date: "%d" | plus:'0' %}
             {{ post.date | date: "%B" }}
             {% case d %}
@@ -17,7 +17,9 @@ layout: default
             {% else %}{{ d }}th,
             {% endcase %}
             {{ post.date | date: "%Y" }}
-           
+            -->
+            {% assign date_format = site.date_format.title %}
+            {{ post.date | date: date_format }}
         </span>
         
         <h2>

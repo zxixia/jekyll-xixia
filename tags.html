@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="well tags-categories-archive">
+<div class="well article">
 {% for tag in site.tags %}
     <h2>{{ tag[0] | capitalize }}</h2>
     <ul>
@@ -10,7 +10,9 @@ layout: default
         {% for node in pages_list %}
             {% if node.title != null %}
             {% if group == null or group == node.group %}
-                <li><a href="{{ site.baseurl}}{{ node.url }}">{{ node.date | date: "%y-%m" }} - {{ node.title }}</a></li>
+                <li><a href="{{ site.baseurl}}{{ node.url }}">
+                    {% assign date_format = site.date_format.tag %}
+                    {{ node.date | date: date_format }} - {{ node.title }}</a></li>
             {% endif %}
             {% endif %}
         {% endfor %}

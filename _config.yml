@@ -11,6 +11,12 @@ url: https://github.com/zxixia/jekyll-xixia
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
 baseurl: '/jekyll-xixia'
+## default date_format
+date_format: 
+  title: "%b %-d, %Y"
+  archive: "%b"
+  categories: "%b, %Y"
+  tag: "%b, %Y"
 
 paginate: 10
 

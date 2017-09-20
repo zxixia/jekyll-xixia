@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="well tags-categories-archive">
+<div class="well article">
 {%for post in site.posts %}
     {% unless post.next %}
         <h2>{{ post.date | date: '%Y' }}</h2>
@@ -16,7 +16,9 @@ layout: default
             <ul>
         {% endif %}
     {% endunless %}
-    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%m" }} - {{ post.title }}</a></li>
+    <li><a href="{{ site.baseurl}}{{ post.url }}">
+        {% assign date_format = site.date_format.archive %}
+        {{ post.date | date: date_format }} - {{ post.title }}</a></li>
 {% endfor %}
 </ul>
 </div>
