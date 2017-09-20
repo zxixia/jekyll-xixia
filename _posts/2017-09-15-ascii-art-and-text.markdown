@@ -4,7 +4,7 @@ title:  "How to get beautiful ASCII pics and ASCII text"
 categories: Programmer
 tags: Other
 author: Xixia
-description: 2 sites, one help to generate ASCII texts for you, another have lots of ASCII pics。
+description: 2 sites, one help to generate ASCII texts for you, another have lots of ASCII pics.
 ---
 
 ###  1，ASCII Generator
