@@ -13,7 +13,7 @@ url: https://github.com/zxixia/jekyll-xixia
 baseurl: '/jekyll-xixia'
 ## default date_format
 date_format: 
-  title: "%b %-d, %Y"
+  title: "%B-%-d-%Y"
   archive: "%b"
   categories: "%b, %Y"
   tag: "%b, %Y"
