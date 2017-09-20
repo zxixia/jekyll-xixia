@@ -114,8 +114,13 @@ body {
 }
 
 .navbar-custom .navbar-brand {
-    color:#eeeeee;
+    color: $nav-bar-brand-color;
 }
+
+.navbar-custom .navbar-brand:hover {
+    color: $nav-bar-brand-hover-color;
+}
+
 .navbar-custom .navbar-toggle {
     background-color:#eeeeee;
 }
