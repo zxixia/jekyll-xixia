@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+{% assign trans = site.data.values[site.lan] %}
 {% for post in paginator.posts %}
 <div class="article">
     <div class="well">
@@ -42,7 +42,7 @@ layout: default
         <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.previous_page }}" class="previous">Newer</a>
       {% endif %}
   {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  <span class="page_number ">{{ trans.page }}: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
     <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.next_page }}" class="next">Older</a>
   {% endif %}

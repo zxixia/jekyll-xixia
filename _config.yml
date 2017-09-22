@@ -17,6 +17,8 @@ date_format:
   archive: "%b"
   categories: "%b, %Y"
   tag: "%b, %Y"
+# Language
+lan: "en" 
 
 paginate: 10
 

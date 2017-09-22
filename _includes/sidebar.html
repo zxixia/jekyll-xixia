@@ -1,3 +1,4 @@
+{% assign trans = site.data.values[site.lan] %}
 <div class="sidebar well">
     <header class="sidebar-header" role="banner">
         <a href="{{ site.baseurl }}/">
@@ -15,7 +16,7 @@
 </div>
 
 <div class="sidebar well">
-    <h1>Recent posts</h1>
+    <h1>{{ trans.recent_posts }}</h1>
     <ul>
         {% for post in site.posts limit:5 %}
           <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>

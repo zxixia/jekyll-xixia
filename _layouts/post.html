@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign trans = site.data.values[site.lan] %}
 <div class="article">
     <div class="well">
         <h2><a href="{{ site.baseurl}}{{ page.url }}">{{ page.title }}</a></h2>
@@ -20,7 +21,7 @@ layout: default
     {{ content }}
     <hr style="border-top:1px solid #28323C;"/>
 
-    <!-- 文章底部的标签和分类列表 -->
+    <!-- tags and categories under post -->
     {% unless page.categories == empty %}
     <ul class="list-unstyled list-inline">
       <li><i class="icon-folder-open"></i></li>
@@ -85,9 +86,9 @@ layout: default
   </div>
   <div class="pagination">
       {% if page.next %}
-        <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">Newer Post</a>
+        <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">{{ trans.newer_post }}</a>
       {% endif %}
       {% if page.previous %}
-        <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">Older Post</a>
+        <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">{{ trans.older_post }}</a>
       {% endif %}
   </div>
