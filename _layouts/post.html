@@ -2,8 +2,7 @@
 layout: default
 ---
 {% assign trans = site.data.values[site.lan] %}
-<div class="article">
-    <div class="well">
+<div class="well article">
         <h2><a href="{{ site.baseurl}}{{ page.url }}">{{ page.title }}</a></h2>
         <span class="post-date">
             {% assign date_format = site.date_format.title %}
@@ -82,13 +81,12 @@ layout: default
         <section id="isso-thread"></section>
         {% endif %}
     {% endif %}
-    </div>
-  </div>
-  <div class="pagination">
-      {% if page.next %}
-        <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">{{ trans.newer_post }}</a>
-      {% endif %}
-      {% if page.previous %}
-        <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">{{ trans.older_post }}</a>
-      {% endif %}
-  </div>
+</div>
+<div class="pagination">
+    {% if page.next %}
+    <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">{{ trans.newer_post }}</a>
+    {% endif %}
+    {% if page.previous %}
+    <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">{{ trans.older_post }}</a>
+    {% endif %}
+</div>
