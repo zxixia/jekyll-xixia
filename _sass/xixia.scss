@@ -7,10 +7,6 @@ $third-color: #0977b6 !default;
 
 $link-color-1:#aaa !default;
 
-/* copyright */
-$copyright-color: #fff !default;
-
-
 /* side bar */
 $side-bar-color: #fff !default;
 $side-bar-background-color: $main-color;
@@ -18,8 +14,10 @@ $side-bar-a-color: $link-color-1;
 $side-bar-a-hover-color: $second-color;
 
 /* footer */
+$footer-color: #fff !default;
 $footer-a-color: $link-color-1;
 $footer-a-hover-color: $second-color;
+$footer-background-color: $main-color;
 
 /* article */
 $article-color: $main-color;

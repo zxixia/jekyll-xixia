@@ -1,16 +1,27 @@
+html {
+    height:100%;
+}
+
 body {
     background-image: url(/jekyll-xixia/assets/images/canvas_bg.jpg);
     padding-top: 60px;
-    padding-bottom: 60px;
+    height:100%;
 }
 
-.copyright {
-    color: $copyright-color;
-    padding-top:10px;
+.wrap {
+    position:relative;
+    min-height:100%;
 }
 
 .footer {
     text-align: center;
+    color: $footer-color;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    min-height:40px;
+    background-color:$footer-background-color;
 }
 
 .footer a {
@@ -20,6 +31,10 @@ body {
 
 .footer a:hover {
     color: $footer-a-hover-color;
+}
+
+.footer p {
+    margin-top:10px;
 }
 
 /* side bar */
@@ -54,6 +69,7 @@ body {
 
 .container-left {
     margin: 0;
+    padding-bottom:60px;
 }
 
 /* post style */
