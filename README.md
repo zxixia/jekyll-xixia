@@ -2,7 +2,7 @@ Jekyll Xixia
 ============
 
 * Get it from [github](https://github.com/zxixia/jekyll-xixia).
-* See the [live demo](http://xixia.info/jekyll-xixia/).
+* See the [live demo](http://zxixia.github.io/jekyll-xixia/).
 * See it [in action on my own blog](http://xixia.info/).
 
 A simple and clean Jekyll theme using [bootstrap](http://getbootstrap.com)
