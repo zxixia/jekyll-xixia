@@ -15,6 +15,21 @@
     </div>
 </div>
 
+{% if site.data.tops.size > 0 %}
+<div class="sidebar well">
+    <h1>{{ trans.top_posts }}</h1>
+    <ul>
+        {% for top in site.data.tops %}
+            {% for post in site.posts %}
+                {% if post.url contains top.url %}
+                    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
 <div class="sidebar well">
     <h1>{{ trans.recent_posts }}</h1>
     <ul>
