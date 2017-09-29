@@ -16,9 +16,9 @@ layout: default
             <ul>
         {% endif %}
     {% endunless %}
-    <li><a href="{{ site.baseurl}}{{ post.url }}">
+    <li><span class="post-date">
         {% assign date_format = site.date_format.archive %}
-        {{ post.date | date: date_format }} - {{ post.title }}</a></li>
+        {{ post.date | date: date_format }} </span><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 </div>

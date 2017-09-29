@@ -15,8 +15,8 @@ baseurl: '/jekyll-xixia'
 date_format: 
   title: "%B-%-d-%Y"
   archive: "%b"
-  categories: "%b, %Y"
-  tag: "%b, %Y"
+  categories: "%b-%Y"
+  tag: "%b-%Y"
 # Language
 lan: "en" 
 

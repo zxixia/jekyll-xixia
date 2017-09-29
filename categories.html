@@ -11,9 +11,9 @@ layout: default
         {% for node in pages_list %}
             {% if node.title != null %}
             {% if group == null or group == node.group %}
-                <li><a href="{{ site.baseurl}}{{ node.url }}">
+                <li><span class="post-date">
                     {% assign date_format = site.date_format.categories %}
-                    {{ node.date | date: date_format }} - {{ node.title }}</a></li>
+                    {{ node.date | date: date_format }} </span><a href="{{ site.baseurl}}{{ node.url }}">{{ node.title }}</a></li>
             {% endif %}
             {% endif %}
         {% endfor %}
