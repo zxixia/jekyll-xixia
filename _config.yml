@@ -10,7 +10,7 @@ url: https://github.com/zxixia/jekyll-xixia
 # be the project name.
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
-baseurl: '/jekyll-xixia'
+baseurl:
 ## default date_format
 date_format: 
   title: "%B-%-d-%Y"
